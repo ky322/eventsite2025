@@ -48,4 +48,4 @@ export default tseslint.config({
   },
 })
 ```
-# eventsite2025
+# BigRed//Hacks Fall 2024 Event Site
