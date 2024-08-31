@@ -3,7 +3,7 @@ import { AppBar, Toolbar, Button, Box } from '@mui/material';
 
 const Header: React.FC = () => {
     return (
-        <AppBar position="static" elevation={0} sx={{ backgroundColor: '#FFF', color: '#000' }}>
+        <AppBar position="static" elevation={0} sx={{ backgroundColor: '#FFFCF4', color: '#000' }}>
             <Toolbar sx={{ justifyContent: 'space-between' }}>
                 <Box display="flex" alignItems="center">
                     <img src="src/components/brh-logo.png" alt="Big Red Hacks Logo" style={{ height: '40px', marginRight: '10px' }} />
@@ -17,7 +17,7 @@ const Header: React.FC = () => {
                     <Button 
                         variant="contained" 
                         sx={{ 
-                            backgroundColor: '#E57373', 
+                            backgroundColor: '#FA3934', 
                             fontWeight: 'bold', 
                             textTransform: 'none', 
                             marginLeft: '20px' 
