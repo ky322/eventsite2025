@@ -13,7 +13,8 @@ const Tracks: React.FC = () => {
   };
 
   return (
-    <Box sx={{ padding: '40px', backgroundColor: '#FFFCF4', position: 'relative' }}>
+    <Box sx={{backgroundColor: '#FFFCF4', position: 'relative' }}>
+      <Box sx={{paddingLeft: '40px' }}>
       <Box
         component='img'
         src={"src/assets/mug.png"}
@@ -74,35 +75,67 @@ const Tracks: React.FC = () => {
           </List>
         </Grid>
       </Grid>
+      </Box>
+      <Box sx={{ position: 'relative', mt: 4 }}>
+        {/* Regular Image */}
+        <Box
+          component="img"
+          src="/src/components/spill.png"
+          alt="Background"
+          sx={{
+            width: '100%',
+            height: 'auto',
+          }}
+        />
+          
+          <Grid 
+          container 
+          spacing={2} 
+          sx={{ 
+            position: 'absolute', 
+            top: 0, 
+            left: 0, 
+            width: '100%', 
+            height: '100%', 
+            display: 'flex', 
+            alignItems: 'center', 
+            justifyContent: 'center',
+            padding: 2,
+          }}
+        >
+          <Grid item xs={3}>
+            <Box display="flex" flexDirection="column" alignItems="center">
+              <Avatar src="src/assets/wellness.png" sx={{ width: 56, height: 56 }} />
+              <Typography variant="subtitle1" fontWeight="bold" color='white'>Wellness</Typography>
+            </Box>
+          </Grid>
+          <Grid item xs={3}>
+            <Box display="flex" flexDirection="column" alignItems="center">
+              <Avatar src="path-to-productivity-icon.png" sx={{ width: 56, height: 56 }} />
+              <Typography variant="subtitle1" fontWeight="bold" color='white'>Productivity</Typography>
+            </Box>
+          </Grid>
+          <Grid item xs={3}>
+            <Box display="flex" flexDirection="column" alignItems="center">
+              <Avatar 
+                src={avatarSrc} 
+                sx={{ width: 56, height: 56 }} 
+                onMouseEnter={handleMouseEnter} 
+                onMouseLeave={handleMouseLeave} 
+              />
+              <Typography variant="subtitle1" fontWeight="bold" color='white'>Entertainment</Typography>
+            </Box>
+          </Grid>
+          <Grid item xs={3}>
+            <Box display="flex" flexDirection="column" alignItems="center">
+              <Avatar src="src/assets/productivity.png" sx={{ width: 56, height: 56 }} />
+              <Typography variant="subtitle1" fontWeight="bold" color='white'>Community</Typography>
+            </Box>
+          </Grid>
+        </Grid> 
+        </Box>
+  </Box>
 
-      {/* Icons and Labels for Wellness, Productivity, Entertainment, Community */}
-      <Grid container item xs={12} spacing={2} sx={{ mt: 4 }} bgcolor='#5D5040'>
-        <Grid item xs={3}>
-          <Box display="flex" flexDirection="column" alignItems="center">
-            <Avatar src="src/assets/wellness.png" sx={{ width: 56, height: 56 }} />
-            <Typography variant="subtitle1" fontWeight="bold" color='white'>Wellness</Typography>
-          </Box>
-        </Grid>
-        <Grid item xs={3}>
-          <Box display="flex" flexDirection="column" alignItems="center">
-            <Avatar src="path-to-productivity-icon.png" sx={{ width: 56, height: 56 }} />
-            <Typography variant="subtitle1" fontWeight="bold" color='white'>Productivity</Typography>
-          </Box>
-        </Grid>
-        <Grid item xs={3}>
-          <Box display="flex" flexDirection="column" alignItems="center">
-            <Avatar src={avatarSrc} sx={{ width: 56, height: 56 }} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} />
-            <Typography variant="subtitle1" fontWeight="bold" color='white'>Entertainment</Typography>
-          </Box>
-        </Grid>
-        <Grid item xs={3}>
-          <Box display="flex" flexDirection="column" alignItems="center">
-            <Avatar src="src/assets/productivity.png" sx={{ width: 56, height: 56 }} />
-            <Typography variant="subtitle1" fontWeight="bold" color='white'>Community</Typography>
-          </Box>
-        </Grid>
-      </Grid>
-    </Box>
   );
 };
 
