@@ -5,7 +5,7 @@ const Footer: React.FC = () => {
     return (
         <Box 
             sx={{
-                backgroundColor: '#E57373', 
+                backgroundColor: '#E46966', 
                 color: '#FFFFFF',
                 paddingTop: '20px',
                 paddingBottom: '20px',
@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
             }}
         >
             <Typography variant="body1">
-                Brewed with ❤️ by <span style={{ fontWeight: 'normal' }}>Big Red // Hacks Team</span>
+                Brewed with ❤️ by <span style={{ fontWeight: 'bolder' }}>Big Red // Hacks Team</span>
             </Typography>
         </Box>
     );

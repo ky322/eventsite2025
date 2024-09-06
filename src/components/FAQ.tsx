@@ -5,14 +5,14 @@ import CoffeeIcon from '@mui/icons-material/Coffee'; // Import the coffee icon
 
 const FAQ: React.FC = () => {
     return (
-        <Box sx={{ padding: '40px', backgroundColor: '#FFF7F0' }}>
+        <Box sx={{ padding: '40px', backgroundColor: '#FFFCF4' }}>
             <Typography variant="h4" sx={{ fontWeight: 'bold', color: '#388E3C', marginBottom: '20px' }}>
                 FAQ
             </Typography>
             <Box display="flex" flexDirection="column" gap={4}>
                 {/* General Section */}
                 <Box>
-                    <Typography variant="h6" sx={{ fontWeight: 'bold', marginBottom: '10px' }}>
+                    <Typography variant="h6" sx={{ fontWeight: 'bold', color: '#000000', marginBottom: '10px' }}>
                         General
                     </Typography>
                     <Accordion>
@@ -52,7 +52,7 @@ const FAQ: React.FC = () => {
 
                 {/* Registration Section */}
                 <Box>
-                    <Typography variant="h6" sx={{ fontWeight: 'bold', marginBottom: '10px' }}>
+                    <Typography variant="h6" sx={{ fontWeight: 'bold', color: '#000000', marginBottom: '10px' }}>
                         Registration
                     </Typography>
                     <Accordion>
@@ -92,7 +92,7 @@ const FAQ: React.FC = () => {
 
                 {/* Logistics Section */}
                 <Box>
-                    <Typography variant="h6" sx={{ fontWeight: 'bold', marginBottom: '10px' }}>
+                    <Typography variant="h6" sx={{ fontWeight: 'bold', color: '#000000', marginBottom: '10px' }}>
                         Logistics
                     </Typography>
                     <Accordion>

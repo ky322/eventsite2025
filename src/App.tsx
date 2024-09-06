@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import FAQ from "./components/FAQ";
 import Sponsors from "./components/Sponsors";
+import Tracks from "./components/Tracks";
 import About from "./components/About";
 
 const RootWrapper = styled(Box)(() => ({
@@ -20,6 +21,7 @@ function App() {
       <Navbar />
       <Hero/>
       <About/>
+      <Tracks/>
       <FAQ/>
       <Sponsors/>
       <Footer/>
